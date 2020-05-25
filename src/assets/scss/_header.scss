@@ -1,0 +1,33 @@
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $backgroundcolor !important;
+}
+
+.search-box {
+  color: black;
+
+  .ant-select-selection {
+    background: rgb(56, 56, 56) !important;
+    border: none;
+  }
+}
+
+.ant-select-dropdown {
+  background: rgb(56, 56, 56) !important;
+  color: grey !important;
+
+  .ant-select-dropdown-menu-item {
+    color: rgb(194, 194, 194);
+
+    &:hover {
+      background-color: rgb(82, 82, 82) !important;
+      color: #fff;
+    }
+  }
+
+  .ant-divider {
+    background: #727272 !important;
+  }
+}

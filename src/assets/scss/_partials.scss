@@ -1,0 +1,27 @@
+.ant-pagination {
+  float: right;
+
+  .ant-pagination-item {
+    background: transparent;
+    a {
+      color: white;
+    }
+
+    &-active {
+      border-color: $filmableRed;
+    }
+  }
+  .ant-pagination-item-link {
+    color: white;
+    &:hover {
+      color: $filmableRed;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ant-pagination {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,49 @@
+.slider {
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.movie-cover {
+  width: 200px !important;
+  background-color: #000 !important;
+  border: none !important;
+  display: inline-block;
+  margin: 0 7px !important;
+  min-width: 194px;
+
+  &-meta-title {
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .ant-card-body {
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    width: 100%;
+  
+    .ant-card-meta-title {
+      color: #fff;
+    }
+  }
+  .ant-card-cover {
+    transition: all .3s;
+  }
+
+  &:hover {
+
+    .ant-card-cover {
+      opacity: 0.5;
+    }
+
+    .ant-card-body {
+      opacity: 1;
+    }
+  }
+}

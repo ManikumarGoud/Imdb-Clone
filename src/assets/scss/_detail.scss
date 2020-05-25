@@ -1,0 +1,124 @@
+.movie-details-container {
+  .movie-backdrop {
+    height: 600px;
+    opacity: 0.1;
+    width: 100%;
+  }
+  
+  .movie-header {
+    position: absolute;
+    width: 100%;
+  }
+
+  .movie-poster {
+    width: 300px;
+  }
+  
+  .movie-photo {
+    width: 40%;
+    margin: 10px 20px;
+  }
+  .movie-card {
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .movie {
+    &-title {
+      font-size: 38px;
+    }
+
+    &-genre {
+      margin-right: 10px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    &-info {
+      display: inline-block;
+      height: 30px;
+
+      &-item {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        border-right: 1px solid grey;
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 15px;
+        color: rgb(175, 175, 175);
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+    }
+
+    &-overview {
+      font-size: 17px;
+      line-height: 2;
+      word-spacing: 1px;
+      color: $detailcolor !important;
+    }
+
+    &-rating {
+      display: flex;
+      align-items: flex-end;
+
+      .movie-average {
+        margin-left: 20px;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .movie-info-item {
+      height: 100px;
+    }
+
+    &-details {
+      padding: 30px;
+      border-radius: 5px;
+      border: 1px solid rgb(58, 58, 58);
+    }
+  }
+
+  .ant-rate {
+    color: rgb(255, 174, 0);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    &-star {
+      margin-right: 3px !important;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.person-card {
+  max-width: 1140px;
+  padding: 35px;
+  box-shadow: 0 0 20px #000000;
+  position: relative;
+
+  .person-description {
+    span {
+      color: #eb315a;
+      width: 120px;
+      display: inline-block
+    }
+  }
+}
+
+.ant-row-flex.ant-row-flex-center.person-detail {
+  max-width: 1140px !important;
+  justify-content: center;
+}

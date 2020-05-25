@@ -1,0 +1,25 @@
+.person-detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 300px !important;
+
+  p {
+    color: rgb(202, 202, 202) !important;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .overview {
+    margin-top: 100px;
+
+    p {
+      line-height: 2.2 !important;
+      font-size: 15px;
+    }
+  }
+  .person-credits {
+    margin: 100px 0 50px 0;
+  }
+}
